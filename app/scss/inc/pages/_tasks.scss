@@ -1,0 +1,35 @@
+.tasks {
+	padding: 47px 40px 47px 40px;
+	background: $white;
+    font-family: $ft-content;
+
+	&__head {
+		div {
+			display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            span {
+                font-size: 12px;
+            }
+        }
+        
+        form {
+            width: 60%;
+            margin: 33px auto 60px auto;
+        }
+    }
+    
+    &__input {
+        position: relative;
+        width: 100%;
+        padding: 21px 29px;
+        border: 1px solid #CCC;
+        font-size: 12px;
+    }
+
+	&__title {
+		font-family: $ft-content;
+		font-size: 28px;
+    }
+}
