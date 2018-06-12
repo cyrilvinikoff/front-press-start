@@ -29,7 +29,7 @@
             <div class="tasks__list">
 
                 <!-- UNE FICHE TACHE -->
-                <article class="taskCard">
+                <article class="taskCard grid-sizer">
                     <!-- TITRE TACHE -->
                     <h3 class="taskCard__title">Conférence E3</h3>
                     <!-- TEXT TACHE -->
@@ -39,42 +39,42 @@
                 </article>
 
                 <!-- UNE FICHE TACHE -->
-                <article class="taskCard">
+                <article class="taskCard grid-sizer">
                     <!-- TITRE TACHE -->
                     <h3 class="taskCard__title">Conférence E3</h3>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem molestiae obcaecati ducimus totam id doloribus quas aperiam dolores eveniet illo doloremque, error laborum quia explicabo molestias sequi! Quia, quo dolore?
                 </article>
 
                 <!-- UNE FICHE TACHE -->
-                <article class="taskCard">
+                <article class="taskCard grid-sizer">
                     <!-- TITRE TACHE -->
                     <h3 class="taskCard__title">Conférence E3</h3>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem molestiae obcaecati ducimus totam id doloribus quas aperiam dolores eveniet illo doloremque, error laborum quia explicabo molestias sequi! Quia, quo dolore?
                 </article>
 
                 <!-- UNE FICHE TACHE -->
-                <article class="taskCard">
+                <article class="taskCard grid-sizer">
                     <!-- TITRE TACHE -->
                     <h3 class="taskCard__title">Conférence E3</h3>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem molestiae obcaecati ducimus totam id doloribus quas aperiam dolores eveniet illo doloremque, error laborum quia explicabo molestias sequi! Quia, quo dolore?
                 </article>
 
                 <!-- UNE FICHE TACHE -->
-                <article class="taskCard">
+                <article class="taskCard grid-sizer">
                     <!-- TITRE TACHE -->
                     <h3 class="taskCard__title">Conférence E3</h3>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem molestiae obcaecati ducimus totam id doloribus quas aperiam dolores eveniet illo doloremque, error laborum quia explicabo molestias sequi! Quia, quo dolore?
                 </article>
 
                 <!-- UNE FICHE TACHE -->
-                <article class="taskCard">
+                <article class="taskCard grid-sizer">
                     <!-- TITRE TACHE -->
                     <h3 class="taskCard__title">Conférence E3</h3>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem molestiae obcaecati ducimus totam id doloribus quas aperiam dolores eveniet illo doloremque, error laborum quia explicabo molestias sequi! Quia, quo dolore?
                 </article>
 
                 <!-- UNE FICHE TACHE -->
-                <article class="taskCard">
+                <article class="taskCard grid-sizer">
                     <!-- TITRE TACHE -->
                     <h3 class="taskCard__title">Conférence E3</h3>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem molestiae obcaecati ducimus totam id doloribus quas aperiam dolores eveniet illo doloremque, error laborum quia explicabo molestias sequi! Quia, quo dolore?
@@ -90,8 +90,13 @@
             var elem = document.querySelector('.tasks__list');
             var iso = new Isotope(elem, {
                 // options
-                layoutMode: 'fitColumns',
-                itemSelector: '.taskCard'
+                itemSelector: '.taskCard',
+                percentPosition: true,
+                masonry: {
+                    // use element for option
+                    columnWidth: '.grid-sizer',
+                    gutter: 10
+                }
             });
         </script>
     </body>
