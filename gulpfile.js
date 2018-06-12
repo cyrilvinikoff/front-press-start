@@ -32,7 +32,6 @@ const paths = {
         './app/js/app.js'
       ],
       concat: [
-        './bower_components/jquery/dist/jquery.min.js',
         './dist/js/dist.min.js'
       ],
       app: {
