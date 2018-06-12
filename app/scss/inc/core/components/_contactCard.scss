@@ -14,10 +14,18 @@
     &__edit {
         display: flex;
         align-items: center;
-        justify-content: center;
         width: 25%;
         font-family: $ft-content;
         font-size: 16px;
+    }
+
+    &__location,
+    &__mail {
+        justify-content: center;
+    }
+
+    &__edit {
+        justify-content: flex-end;
     }
 
     &__main-infos {
