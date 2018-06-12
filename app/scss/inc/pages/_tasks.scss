@@ -4,6 +4,7 @@
     font-family: $ft-content;
 
 	&__head {
+
 		div {
 			display: flex;
             justify-content: space-between;
@@ -13,13 +14,13 @@
                 font-size: 12px;
             }
         }
-        
+
         form {
             width: 60%;
             margin: 33px auto 60px auto;
         }
     }
-    
+
     &__input {
         position: relative;
         width: 100%;
@@ -31,5 +32,9 @@
 	&__title {
 		font-family: $ft-content;
 		font-size: 28px;
+    }
+
+    .grid-sizer {
+        width: calc((100%/6) - (10px - 10px / 6));
     }
 }
