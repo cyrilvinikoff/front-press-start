@@ -42,21 +42,52 @@
 			margin-right: 20px;
             width: calc(65% - 10px);
 
-            .delete-account {
+            .profile-actions {
                 position: absolute;
                 right: 20px;
                 bottom: 20px;
-                padding: 16px 19px;
-                background: #2C2C2C;
-                color: #E42A2A;
-                font-size: 12px;
-                border-radius: 5px;
-                cursor: pointer;
+				
+				a,
+				input {
+					font-size: 12px;
+					padding: 16px 19px;
+					background: #2C2C2C;
+					border-radius: 5px;
+					cursor: pointer;
+				}
+
+				a {
+					color: #F07A2A;
+				}
+
+				input {
+					margin-left: 10px;
+					color: #E42A2A;
+				}
             }
 		}
 
 		aside {
+			min-height: 400px;
 			width: calc(35% - 10px);
+
+			input {
+				background-image: url('../../../img/valid.svg');
+			}
+
+			textarea {
+				min-height: 300px;
+				width: 100%;
+				background: #0c0c0c;
+				color: #F07A2A;
+				line-height: 1.5;
+
+				&:focus {
+					background: #2C2C2C;
+					border-radius: 22.5px;
+					padding: 16px 13px;
+				}
+			}
 		}
 
 		&__banner {
@@ -91,6 +122,59 @@
 	}
 
 	&__form__content {
+
+		&__consoles {
+			display: flex;
+			flex-wrap: wrap;
+			margin-bottom: 10px;
+
+			span {
+				flex: 0 0 100%;
+				margin-bottom: 10px;
+				font-weight: bold;
+			}
+
+			div {
+				margin-right: 10px;
+
+				&:last-of-type {
+					margin-right: 0;
+				}
+			}
+
+			label {
+				display: block;
+				background-repeat: no-repeat;
+				height: 90px;
+				width: 96px;
+				opacity: 0.5;
+			}
+
+			input {
+				display: none;
+
+				&:checked + label {
+					opacity: 1;
+				}
+			}
+
+			.play {
+				background-image: url('../../../img/playstation4.png');
+			}
+
+			.switch {
+				background-image: url('../../../img/playstation4.png');
+			}
+
+			.xbox {
+				background-image: url('../../../img/playstation4.png');
+			}
+
+			.pc {
+				background-image: url('../../../img/pc.png');
+			}
+		}
+
 		&__head {
 			display: -webkit-box;
 			display: -ms-flexbox;

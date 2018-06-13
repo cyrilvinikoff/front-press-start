@@ -3,6 +3,10 @@ body {
 	font-family: $ft-content;
 }
 
+a {
+	text-decoration: none;
+}
+
 .is-connected {
 	position: absolute;
 	bottom: 5px;
