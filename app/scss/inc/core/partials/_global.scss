@@ -1,4 +1,10 @@
 body {
-	color:$black;
+	color: $black;
 	font-family: $ft-content;
+}
+
+.is-connected {
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
 }
