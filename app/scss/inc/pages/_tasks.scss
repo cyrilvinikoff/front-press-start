@@ -1,0 +1,48 @@
+.tasks {
+	padding: 47px 40px 47px 40px;
+    font-family: $ft-content;
+
+	&__head {
+
+		div {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+
+            span {
+                font-size: 12px;
+                color: $white;
+            }
+        }
+
+        form {
+            width: 60%;
+            margin: 33px auto 60px auto;
+        }
+    }
+
+    &__input {
+        position: relative;
+        width: 100%;
+        padding: 21px 29px;
+        border: 1px solid #CCC;
+        font-size: 12px;
+    }
+
+	&__title {
+		font-family: $ft-title;
+		font-size: 50px;
+        font-weight: bold;
+        color: $white;
+    }
+
+    .grid-sizer {
+        width: calc((100%/6) - (10px - 10px / 6));
+    }
+}
