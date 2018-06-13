@@ -1,17 +1,23 @@
 .tasks {
 	padding: 47px 40px 47px 40px;
-	background: $white;
     font-family: $ft-content;
 
 	&__head {
 
 		div {
+			display: -webkit-box;
+			display: -ms-flexbox;
 			display: flex;
-            justify-content: space-between;
-            align-items: center;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
 
             span {
                 font-size: 12px;
+                color: $white;
             }
         }
 
@@ -30,8 +36,10 @@
     }
 
 	&__title {
-		font-family: $ft-content;
-		font-size: 28px;
+		font-family: $ft-title;
+		font-size: 50px;
+        font-weight: bold;
+        color: $white;
     }
 
     .grid-sizer {

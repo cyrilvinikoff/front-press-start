@@ -1,19 +1,36 @@
 .contacts {
     padding: 47px 40px 47px 40px;
-    background: $white;
 
     &__head {
         position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         margin-bottom: 60px;
 
-        div {
+        &__btn {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            width: 40%;
-            font-family: $ft-content;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
             font-size: 12px;
+
+            img {
+                height: 40px;
+                margin-right: 20px;
+
+                &:last-of-type {
+                    margin-right: 0;
+                }
+            }
         }
 
         form {
@@ -28,9 +45,29 @@
         }
     }
 
+    &__intro {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        padding-right: 10px;
+    }
+
     &__title {
-        font-family: $ft-content;
-        font-size: 28px;
+        font-family: $ft-title;
+        font-size: 50px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        color: $white;
+    }
+
+    &__introTxt {
+        font-size: 16px;
+        color: $white;
+        font-weight: bold;
     }
 
     &__addBtn {
@@ -43,6 +80,7 @@
             top: 50%;
             right: 15px;
             width: 15px;
-            transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+                    transform: translateY(-50%);
     }
 }
