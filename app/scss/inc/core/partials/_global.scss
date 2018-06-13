@@ -1,5 +1,5 @@
 body {
-	color: $black;
+	background: $dark-bg;
 	font-family: $ft-content;
 }
 
@@ -15,4 +15,16 @@ a {
 
 .hidden {
 	display: none;
+}
+
+.todo {
+	background: #E42A2A;
+}
+
+.done {
+	background: #AFB2AC;
+}
+
+.new {
+	background: #8FCB48;
 }
