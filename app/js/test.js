@@ -6,5 +6,4 @@ var addMenu = document.querySelector('.add_card');
 addIcon.addEventListener('click', function() {
 	addMenu.classList.toggle('hidden');
 
-
 });
