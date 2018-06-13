@@ -25,7 +25,7 @@
                 <form>
                     <div class="contact-single__boxes__banner">
                         <h2>INFORMATIONS</h2>
-                        <img src="../img/edit-form.svg" alt="modifier le formulaire">
+                        <img src="../img/valid.svg" alt="modifier le formulaire">
                     </div>
                     <div class="contact-single__form__content">
                         <div class="contact-single__form__content__head">
@@ -64,6 +64,18 @@
                         <div class="contact-single__form__content__main">
                             <!-- NOM CONTACT -->
                             <div class="input-ctn">
+                                <label for="">MOT DE PASSE</label>
+                                <input class="input" type="password" placeholder="Saisissez le mot de passe...">
+                            </div>
+
+                            <!-- NOM CONTACT -->
+                            <div class="input-ctn">
+                                <label for="">NOUVEAU MOT DE PASSE</label>
+                                <input class="input" type="mail" placeholder="Saisissez le nouveau mot de passe...">
+                            </div>
+
+                            <!-- NOM CONTACT -->
+                            <div class="input-ctn">
                                 <label for="">ADRESSE MAIL</label>
                                 <input class="input" type="mail" placeholder="Saisissez le mail...">
                             </div>
@@ -94,8 +106,29 @@
                             </div>
                         </div>
 
+                        <div class="contact-single__form__content__consoles">
+                            <!-- contact CONSOLE(S) -->
+                            <span>CONSOLES</span>
+                            <div>
+                                <input type="checkbox" id="play">
+                                <label for="play" class="play"></label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="switch">
+                                <label for="switch" class="switch"></label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="xbox">
+                                <label for="xbox" class="xbox"></label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="pc">
+                                <label for="pc" class="pc"></label>
+                            </div>
+                        </div>
+
                         <div class="contact-single__form__content__footer">
-                            <!-- POSTE CONTACT -->
+                            <!-- POSTE SITE(S) -->
                             <div class="input-ctn">
                                 <label for="">SITES WEB</label>
                                 <div>
@@ -121,19 +154,36 @@
                                 </a>
                             </div>
                         </div>
-                        <input type="button" class="delete-account" value="Supprimer ce compte">
+                        <div class="profile-actions">
+                            <a href="mailto:cyrilvinikoff@gmail.com">Envoyer un mail</a>
+                            <input type="button" class="delete-account" value="Supprimer ce compte">
+                        </div>
                     </div>
                 </form>
                 <!-- ASIDE BLOCS -->
                 <aside>
                     <div class="contact-single__boxes__banner">
                         <h2>NOTES</h2>
-                        <img src="../img/edit-form.svg" alt="modifier le formulaire">
+                        <img src="../img/valid.svg" alt="modifier le formulaire">
                     </div>
+                    <!-- NOTES -->
                     <div class="contact-single__boxes__content">
-                        - Publicae senator publicae ille properat aliud quid fortuna hac publicae quid eximia tam vellet facere quid. - Ut ille rei facere tam ille ille tam hac facere ille ille ille rei. Publicae senator publicae ille properat aliud - Quid fortuna hac publicae quid eximia tam vellet facere quid ut ille rei facere tam ille ille tam hac facere ille ille ille rei.
+                        <textarea name="" spellcheck="false">- Publicae senator publicae ille properat aliud quid fortuna hac publicae quid eximia tam vellet facere quid. - Ut ille rei facere tam ille ille tam hac facere ille ille ille rei. Publicae senator publicae ille properat aliud - Quid fortuna hac publicae quid eximia tam vellet facere quid ut ille rei facere tam ille ille tam hac facere ille ille ille rei.
+                        </textarea>
                     </div>
                 </aside>
+            </div>
+
+            <!-- MODALES CONTACT -->
+            <div class="modals-ctn">
+                <form class="modals-ctn__item modals-ctn__item--delete">
+                    <h4>Suppression de compte</h4>
+                    <p>Voulez-vous vraiment supprimer votre compte ? Cette action entraînera la suppression définitive de vos informations.</p>
+                    <div>
+                        <input class="btn btn--validate" type="button" value="Confirmer">
+                        <input class="btn btn--warning" type="button" value="Annuler">
+                    </div>
+                </form>
             </div>
         </section>
     </body>
