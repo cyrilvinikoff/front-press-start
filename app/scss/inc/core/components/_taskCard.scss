@@ -1,7 +1,8 @@
 .taskCard {
     padding: 25px 30px;
-    background: #979797;
+    background: $dark-bg;
     margin-bottom: 10px;
+    border-radius: 5px;
 
     &__title {
         margin-bottom: 15px;
