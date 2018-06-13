@@ -1,4 +1,9 @@
-console.log('Hello');
+// ADD //
 
+var addIcon = document.querySelector('.header__add-container');
+var addMenu = document.querySelector('.add_card');
 
-console.log($('h1'));
+addIcon.addEventListener('click', function() {
+	addMenu.classList.toggle('hidden');
+
+});
