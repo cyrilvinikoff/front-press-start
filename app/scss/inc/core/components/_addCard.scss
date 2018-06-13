@@ -6,7 +6,7 @@
 	border-radius: 5px;
 	z-index: 10;
 	width: 254px;
-	padding: 10px;
+	box-shadow: 0 0 6px 0 rgba(0,0,0,0.50);
 	li:hover, li:nth-child(2n):hover {
 		background: $orange;
 	}
@@ -19,7 +19,6 @@
 		text-decoration: none;
 		color:#fff;
 		justify-content:center;
-		box-shadow: 0 0 6px 0 rgba(0,0,0,0.50);
 	}
 	li:nth-child(2n) {
 		background: $black;
