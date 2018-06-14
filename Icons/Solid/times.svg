@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="25px" viewBox="0 0 29 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Icons/Solid/times</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-7.4%" y="-25.0%" width="114.9%" height="150.0%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <path d="M7.61289232,16.5923824 L1.98518669,10.9646768 C1.64708469,10.6265748 1.64708469,10.0783808 1.98518669,9.74024494 L3.20958469,8.51581313 C3.54768669,8.1776773 4.0959145,8.1776773 4.4340165,8.51581313 L8.22510823,12.306871 L16.3452043,4.1868088 C16.6833063,3.84870679 17.2315341,3.84870679 17.5696361,4.1868088 L18.7940341,5.41124061 C19.1321361,5.74934262 19.1321361,6.29753661 18.7940341,6.63567243 L8.83732413,16.5924162 C8.49918831,16.9305182 7.95099432,16.9305182 7.61289232,16.5923824 Z" id="path-2"></path>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#F7931E" offset="0%"></stop>
+            <stop stop-color="#D4145A" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="tags-ajouter-un-tag" transform="translate(-1281.000000, -617.000000)">
+            <g id="envoyer-email" filter="url(#filter-1)" transform="translate(1279.000000, 611.000000)">
+                <g id="Icons/Solid/check" transform="translate(6.000000, 8.000000)">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <use id="check" fill="#000000" fill-rule="nonzero" xlink:href="#path-2"></use>
+                    <g id="Orange-pink" mask="url(#mask-3)" fill="url(#linearGradient-4)" fill-rule="evenodd">
+                        <rect id="Rectangle" x="0" y="0" width="21.0958904" height="21.0958904"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
