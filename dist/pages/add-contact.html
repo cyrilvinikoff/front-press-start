@@ -134,23 +134,16 @@
                                 <!-- POSTE SITE(S) -->
                                 <div class="input-ctn">
                                     <label for="">SITES WEB</label>
-                                    <div class="input-wrapper">
-                                        <input class="input" type="text" placeholder="Saisissez le site...">
-                                        <a href="">
-                                            <img src="../img/open-link.svg" alt="ouvrir le lien">
-                                        </a>
-                                        <a href="">
-                                            <img src="../img/supprimer-lien.svg" alt="supprimer le lien">
-                                        </a>
-                                    </div>
-                                    <div>
-                                        <input class="input" type="text" placeholder="Saisissez le site...">
-                                        <a href="">
-                                            <img src="../img/open-link.svg" alt="ouvrir le lien">
-                                        </a>
-                                        <a href="">
-                                            <img src="../img/supprimer-lien.svg" alt="supprimer le lien">
-                                        </a>
+                                    <div class="inputs">
+                                        <div class="input-wrapper">
+                                            <input class="input" type="text" placeholder="Saisissez le site...">
+                                            <a href="">
+                                                <img src="../img/open-link.svg" alt="ouvrir le lien">
+                                            </a>
+                                            <a href="">
+                                                <img src="../img/supprimer-lien.svg" alt="supprimer le lien">
+                                            </a>
+                                        </div>
                                     </div>
                                     <img class="add-site" src="../img/ajouter-tag.svg" alt="ajouter un site">
                                 </div>
@@ -169,24 +162,23 @@
                             </div>
                             <!-- NOTES -->
                             <div class="contact-single__boxes__content">
-                                <textarea name="" spellcheck="false">
-                                </textarea>
+                                <textarea name="" spellcheck="false"></textarea>
                             </div>
                         </section>
                         <section>
                             <div class="contact-single__boxes__banner">
                                 <h2>ROLE</h2>
                             </div>
-                                    <div class="checkbox-choice">
-                                        <div>
-                                            <input type="checkbox" id="admin">
-                                            <label for="admin" class="admin"></label>
-                                        </div>
-                                        <div>
-                                            <input type="checkbox" id="client">
-                                            <label for="client" class="client"></label>
-                                        </div>
-                                    </div>
+                            <div class="checkbox-choice">
+                                <div>
+                                    <input type="checkbox" id="admin">
+                                    <label for="admin" class="admin"></label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="client">
+                                    <label for="client" class="client"></label>
+                                </div>
+                            </div>
                         </section>
                     </aside>
                 </div>
@@ -204,5 +196,16 @@
                 </form>
             </div>
         </section>
-</body>
+
+        <script>
+            var clonedInput = document.querySelector('.input-wrapper');
+            var newInput = clonedInput.cloneNode(true);
+            var parentDiv = clonedInput.parentNode;
+            console.log(newInput);
+
+            document.querySelector('.add-site').addEventListener('click', function () {
+                parentDiv.appendChild(newInput);
+            })
+        </script>
+    </body>
 </html>
