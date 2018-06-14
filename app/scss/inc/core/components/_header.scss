@@ -2,12 +2,13 @@
 	display: flex;
 	width: 87%;
 	position: relative;
+	justify-content: space-between;
 	float: right;
 	background: $dark-bg;
 	min-height: 76px;
 	padding-right: 25px;
-	justify-content:flex-end;
 	box-shadow: 0 0 6px 0 rgba(0,0,0,0.50);
+	align-items: center;
 	&__search-container,
 	&__add-container,
 	&__account-profile {
@@ -16,6 +17,28 @@
 		align-items: center;
   		justify-content: center;
   		margin-right: 15px;
+	}
+	ul {
+		display: flex;
+		padding-left: 40px;
+
+		li {
+			margin-right: 50px;
+			color: $white;
+			cursor: pointer;
+
+			&:last-of-type {
+				margin-right: 0;
+			}
+		}
+
+		.is-active {
+			font-weight: bold;
+			color: #F7921F;
+		}
+	}
+	.header__search-ctn {
+		display: flex;
 	}
 	input {
 		width: 283px;
