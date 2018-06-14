@@ -1,0 +1,108 @@
+.tags {
+    padding: 47px 40px 47px 40px;
+    font-family: $ft-content;
+    float: right;
+    width: 87%;
+    border-radius: 2px;
+    color:$white;
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 0;
+    }
+    &__container {
+        margin: 25px auto;
+        border-radius: 2px;
+    }
+    &__container-card {
+        height: 385px;
+        background: $black;
+    }
+    &__trash {
+        img {
+            width: 25px;
+            height: 25px;
+            margin: 0 30px;
+        }
+    }
+    input {
+        width: 283px;
+        height: 35px;
+        border-radius: 26px;
+        background: $dark-bg;
+        font-style: italic;
+        padding-left: 10px;
+        color:$white;
+    }
+    &__container-head {
+        display: flex;
+        background: $black;
+        align-items:center;
+        padding: 10px;
+        justify-content:flex-end;
+        p {
+            font-size: 18px;
+            margin-right: 100px;
+            font-weight: bold;
+            span {
+                font-family: $ft-title;
+            }
+        }
+    }
+    .blogger-tag {
+        background: #8FCB48;
+        color:#fff;
+        padding: 5px 10px;
+    }
+    .independant-tag {
+        background: #4885CB;
+        color:#fff;
+        padding: 5px 10px;
+    }
+    &__search-container {
+        position: relative;
+    }
+    &__search-loupe {
+        position: absolute;
+        right: 10px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        cursor: pointer;
+    }
+    &__add-tag {
+        float: right;
+        background: $black;
+        display: flex;
+        height: 36px;
+        align-items: center;
+        margin-top: 20px;
+        border-radius: 5px;
+        width: 16%;
+        a {
+            display: block;
+            color:$orange;
+        }
+    }
+    .tagCard {
+        &__main-infos {
+            width: 20%;
+        }
+        &__explain {
+            width: 40%;
+            text-align: left;
+        }
+        &__uses {
+            width: 20%;
+        }
+        &__edit {
+            width: 20%;
+            text-align: right;
+            img {
+                width: 25px;
+                height: 25px;
+            }
+        }
+    }
+}
