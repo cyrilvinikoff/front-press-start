@@ -31,14 +31,14 @@
 		-ms-flex-align: start;
 		align-items: flex-start;
 
-		form,
+		.left-box,
 		aside {
 			padding: 15px 20px 45px 20px;
 			background: #0c0c0c;
 			border-radius: 5px;
 		}
 
-		form {
+		.left-box {
 			position: relative;
 			margin-right: 20px;
 			width: calc(65% - 10px);
@@ -59,11 +59,16 @@
 
 				a {
 					color: #f07a2a;
+					margin-left: 10px;
 				}
 
 				input {
 					margin-left: 10px;
 					color: #e42a2a;
+				}
+
+				.edit-conf {
+					color: #8FCB48;
 				}
 			}
 		}
@@ -82,6 +87,7 @@
 				background: #0c0c0c;
 				color: #f07a2a;
 				line-height: 1.5;
+				font-family: $ft-content;
 
 				&:focus {
 					background: #2c2c2c;
@@ -279,7 +285,7 @@
 	}
 
 	.section-socials {
-		display: flex;
+		display: none;
 
 		.head {
 			display: flex;
