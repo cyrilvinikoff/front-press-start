@@ -303,7 +303,7 @@
             </div>
         </section>
 
-        <!-- <script>
+        <script>
             window.twttr = (function (d, s, id) {
                 var js,
                     fjs = d.getElementsByTagName(s)[0],
@@ -361,7 +361,7 @@
                             }
                         })
                 })
-        </script> -->
+        </script>
 
         <script>
             var linkToModal = document.querySelector('.delete-account');
@@ -384,7 +384,6 @@
             })
 
             document.querySelector('body').addEventListener('click', function (e) {
-                e.preventDefault();
 
                 modalCtn.classList.remove('show');
             })
@@ -393,9 +392,6 @@
         <script>
             var tabItem = document.querySelectorAll('.tab-item');
             var sections = document.querySelectorAll('.section');
-
-            console.log(tabItem);
-            console.log(sections);
 
             for (let i = 0; i < tabItem.length; i++) {
                 tabItem[i].addEventListener('click', function () {
