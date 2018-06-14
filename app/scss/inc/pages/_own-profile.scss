@@ -74,9 +74,16 @@
 
 		.aside__content {
 			li {
+				display: -webkit-box;
+				display: -ms-flexbox;
 				display: flex;
-				flex-direction: column;
-				align-items: center;
+				-webkit-box-orient: vertical;
+				-webkit-box-direction: normal;
+				    -ms-flex-direction: column;
+				        flex-direction: column;
+				-webkit-box-align: center;
+				    -ms-flex-align: center;
+				        align-items: center;
 				padding: 12px 20px;
 
 				&:nth-of-type(2n+1) {
@@ -173,9 +180,14 @@
 		}
 
 		&__main {
+			display: -webkit-box;
+			display: -ms-flexbox;
 			display: flex;
-			justify-content: space-between;
-			flex-wrap: wrap;
+			-webkit-box-pack: justify;
+			    -ms-flex-pack: justify;
+			        justify-content: space-between;
+			-ms-flex-wrap: wrap;
+			    flex-wrap: wrap;
 
 			.input-ctn {
 				width: calc((100% / 2) - (21px - 21px / 2));
