@@ -123,4 +123,11 @@
 		width: 98%;
 		margin-top: 20px;
 	}
+	&__contact-title {
+		background: $black;
+		padding: 15px 10px;
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: 900;
+	}
 }

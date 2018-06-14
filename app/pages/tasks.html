@@ -186,23 +186,18 @@
                 }
             });
 
+            var filterFns = {
+            };
 
-
-// filter functions
-var filterFns = {
-
-};
-
-// bind filter button click
-var filtersElem = document.querySelector('.tasks__filter');
-filtersElem.addEventListener( 'click', function( event ) {
-  if ( !matchesSelector( event.target, 'button' ) ) {
-    return;
-  }
-  var filterValue = event.target.getAttribute('data-filter');
-  filterValue = filterFns[ filterValue ] || filterValue;
-  iso.arrange({ filter: filterValue });
-});
+            var filtersElem = document.querySelector('.tasks__filter');
+            filtersElem.addEventListener( 'click', function( event ) {
+              if ( !matchesSelector( event.target, 'button' ) ) {
+                return;
+              }
+              var filterValue = event.target.getAttribute('data-filter');
+              filterValue = filterFns[ filterValue ] || filterValue;
+              iso.arrange({ filter: filterValue });
+            });
         </script>
     </body>
 </html>
