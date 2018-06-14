@@ -103,15 +103,14 @@
                     </form>
                     <!-- LISTE DES CONTACTS -->
                     <div class="tasks__filter">
-                        <ul>
-                            <li class="tag todo">À faire</li>
-                            <li class="tag new">Nouveau</li>
-                            <li class="tag done">Terminé</li>
-                        </ul>
+                        <button class="tag" data-filter="*">Toutes</button>
+                        <button class="tag todo" data-filter=".todo">À faire</button>
+                        <button class="tag new" data-filter=".new">Nouveau</button>
+                        <button class="tag done" data-filter=".done">Terminé</button>
                     </div>
                     <div class="tasks__list">
                         <!-- UNE FICHE TACHE -->
-                        <article class="taskCard grid-sizer">
+                        <article class="taskCard grid-sizer todo">
                             <!-- TITRE TACHE -->
                             <p class="tag todo">À faire</p>
                             <h3 class="taskCard__title">Conférence E3</h3>
@@ -122,21 +121,23 @@
                         </article>
 
                         <!-- UNE FICHE TACHE -->
-                        <article class="taskCard grid-sizer">
+                        <article class="taskCard grid-sizer new">
+                            <p class="tag new">Nouveau</p>
                             <!-- TITRE TACHE -->
                             <h3 class="taskCard__title">Conférence E3</h3>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem molestiae obcaecati ducimus totam id doloribus quas aperiam dolores eveniet illo doloremque, error laborum quia explicabo molestias sequi! Quia, quo dolore? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, quas laboriosam. Qui, quas ab nulla sapiente voluptatibus, incidunt repudiandae cumque eaque neque blanditiis provident quis nostrum, a voluptatem quia rerum! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat ut sunt facilis omnis dolor natus amet unde, eum nemo? Possimus rem porro, dolorem optio officia magni laudantium cupiditate eum quisquam!
                         </article>
-
                         <!-- UNE FICHE TACHE -->
-                        <article class="taskCard grid-sizer">
+                        <article class="taskCard grid-sizer todo">
+                            <p class="tag todo">À faire</p>
                             <!-- TITRE TACHE -->
                             <h3 class="taskCard__title">Conférence E3</h3>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem molestiae obcaecati ducimus totam id doloribus quas aperiam dolores eveniet illo doloremque, error laborum quia explicabo molestias sequi! Quia, quo dolore? Lorem ipsum dolor sit amet consectetur, adipisicing elit. In rem corporis, ab magnam nisi, soluta repudiandae repellendus harum ratione nemo tempora autem expedita officia quis, fugiat rerum impedit quasi tempore?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem molestiae obcaecati ducimus totam id doloribus quas aperiam dolores eveniet illo doloremque, error laborum quia explicabo molestias sequi! Quia, quo dolore?
                         </article>
 
                         <!-- UNE FICHE TACHE -->
-                        <article class="taskCard grid-sizer">
+                        <article class="taskCard grid-sizer todo">
+                            <p class="tag todo">À faire</p>
                             <!-- TITRE TACHE -->
                             <h3 class="taskCard__title">Conférence E3</h3>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem molestiae obcaecati ducimus totam id doloribus quas aperiam dolores eveniet illo doloremque, error laborum quia explicabo molestias sequi! Quia, quo dolore?
@@ -144,55 +145,23 @@
 
                         <!-- UNE FICHE TACHE -->
                         <article class="taskCard grid-sizer">
-                            <!-- TITRE TACHE -->
-                            <h3 class="taskCard__title">Conférence E3</h3>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem molestiae obcaecati ducimus totam id doloribus quas aperiam dolores eveniet illo doloremque, error laborum quia explicabo molestias sequi! Quia, quo dolore?
-                        </article>
-
-                        <!-- UNE FICHE TACHE -->
-                        <article class="taskCard grid-sizer">
-                            <!-- TITRE TACHE -->
-                            <h3 class="taskCard__title">Conférence E3</h3>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem molestiae obcaecati ducimus totam id doloribus quas aperiam dolores eveniet illo doloremque, error laborum quia explicabo molestias sequi! Quia, quo dolore? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil nesciunt ratione vero consequuntur sunt perspiciatis veniam provident, blanditiis odio sapiente accusantium? Architecto sit reprehenderit odio possimus, sapiente aliquid omnis ipsum!
-                        </article>
-
-                        <!-- UNE FICHE TACHE -->
-                        <article class="taskCard grid-sizer">
-                            <!-- TITRE TACHE -->
-                            <h3 class="taskCard__title">Conférence E3</h3>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem molestiae obcaecati ducimus totam id doloribus quas aperiam dolores eveniet illo doloremque, error laborum quia explicabo molestias sequi! Quia, quo dolore?
-                        </article>
-
-                        <!-- UNE FICHE TACHE -->
-                        <article class="taskCard grid-sizer">
-                            <!-- TITRE TACHE -->
-                            <h3 class="taskCard__title">Conférence E3</h3>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem molestiae obcaecati ducimus totam id doloribus quas aperiam dolores eveniet illo doloremque, error laborum quia explicabo molestias sequi! Quia, quo dolore?
-                        </article>
-
-                        <!-- UNE FICHE TACHE -->
-                        <article class="taskCard grid-sizer">
-                            <!-- TITRE TACHE -->
-                            <h3 class="taskCard__title">Conférence E3</h3>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem molestiae obcaecati ducimus totam id doloribus quas aperiam dolores eveniet illo doloremque, error laborum quia explicabo molestias sequi! Quia, quo dolore?
-                        </article>
-
-                        <!-- UNE FICHE TACHE -->
-                        <article class="taskCard grid-sizer">
+                            <p class="tag done">Terminé</p>
                             <!-- TITRE TACHE -->
                             <h3 class="taskCard__title">Conférence E3</h3>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem molestiae obcaecati ducimus totam id doloribus quas aperiam dolores eveniet illo doloremque, error laborum quia explicabo molestias sequi! Quia, quo dolore? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt nulla natus asperiores officiis, ipsam exercitationem quae excepturi illo nisi debitis quidem dicta cumque harum itaque rerum mollitia fugit nihil illum.
                         </article>
 
                         <!-- UNE FICHE TACHE -->
-                        <article class="taskCard grid-sizer">
+                        <article class="taskCard grid-sizer done">
+                            <p class="tag done">Terminé</p>
                             <!-- TITRE TACHE -->
                             <h3 class="taskCard__title">Conférence E3</h3>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem molestiae obcaecati ducimus totam id doloribus quas aperiam dolores eveniet illo doloremque, error laborum quia explicabo molestias sequi! Quia, quo dolore?
                         </article>
 
                         <!-- UNE FICHE TACHE -->
-                        <article class="taskCard grid-sizer">
+                        <article class="taskCard grid-sizer done">
+                            <p class="tag done">Terminé</p>
                             <!-- TITRE TACHE -->
                             <h3 class="taskCard__title">Conférence E3</h3>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem molestiae obcaecati ducimus totam id doloribus quas aperiam dolores eveniet illo doloremque, error laborum quia explicabo molestias sequi! Quia, quo dolore?
@@ -201,8 +170,6 @@
                 </div>
             </section>
             
-            
-
         <script src="../js/app.min.js" charset="utf-8"></script>
         <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 
@@ -218,6 +185,24 @@
                     gutter: 10
                 }
             });
+
+
+
+// filter functions
+var filterFns = {
+
+};
+
+// bind filter button click
+var filtersElem = document.querySelector('.tasks__filter');
+filtersElem.addEventListener( 'click', function( event ) {
+  if ( !matchesSelector( event.target, 'button' ) ) {
+    return;
+  }
+  var filterValue = event.target.getAttribute('data-filter');
+  filterValue = filterFns[ filterValue ] || filterValue;
+  iso.arrange({ filter: filterValue });
+});
         </script>
     </body>
 </html>
