@@ -130,12 +130,17 @@
 
 	&__form__content {
 		&__consoles {
+			display: -webkit-box;
+			display: -ms-flexbox;
 			display: flex;
-			flex-wrap: wrap;
+			-ms-flex-wrap: wrap;
+			    flex-wrap: wrap;
 			margin-bottom: 10px;
 
 			span {
-				flex: 0 0 100%;
+				-webkit-box-flex: 0;
+				    -ms-flex: 0 0 100%;
+				        flex: 0 0 100%;
 				margin-bottom: 10px;
 				font-weight: bold;
 			}
@@ -228,9 +233,14 @@
 		}
 
 		&__main {
+			display: -webkit-box;
+			display: -ms-flexbox;
 			display: flex;
-			justify-content: space-between;
-			flex-wrap: wrap;
+			-webkit-box-pack: justify;
+			    -ms-flex-pack: justify;
+			        justify-content: space-between;
+			-ms-flex-wrap: wrap;
+			    flex-wrap: wrap;
 
 			.input-ctn {
 				width: calc((100% / 2) - (21px - 21px / 2));
@@ -244,8 +254,12 @@
 
 		&__footer {
 			.input-ctn .input-wrapper {
+				display: -webkit-box;
+				display: -ms-flexbox;
 				display: flex;
-				align-items: center;
+				-webkit-box-align: center;
+				    -ms-flex-align: center;
+				        align-items: center;
 				width: calc((100% / 2) - (21px - 21px / 2));
 				margin-bottom: 20px;
 
@@ -288,8 +302,12 @@
 		display: none;
 
 		.head {
+			display: -webkit-box;
+			display: -ms-flexbox;
 			display: flex;
-			align-items: center;
+			-webkit-box-align: center;
+			    -ms-flex-align: center;
+			        align-items: center;
 			margin-bottom: 10px;
 
 			img {
@@ -310,12 +328,17 @@
 		}
 
 		.content {
-			padding: 15px 20px 45px 20px;
+			padding: 30px 40px 45px 40px;
 			background: #0c0c0c;
 			border-radius: 5px;
 
 			iframe {
+				margin-bottom: 20px;
 				width: 100%;
+
+				&:last-of-type {
+					margin-bottom: 0;
+				}
 			}
 		}
 	}
