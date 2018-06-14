@@ -9,6 +9,87 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:300i,400,700,900|Orbitron:400,500,700" rel="stylesheet">
     </head>
     <body>
+        <nav class="sidenav">
+            <div class="sidenav__logo-container">
+                <img src="../img/logo-white.png" alt="Logo Press Start">
+            </div>
+            <ul class="sidenav__list">
+                <li class="sidenav__list-item">
+                    <a href="" title="">
+                        <img src="../img/Icons/Regular/dashboard.svg">Dashboard
+                    </a>
+                </li>
+                <li class="sidenav__list-item">
+                    <a href="" title="">
+                        <img src="../img/Icons/Regular/address-book.svg">Contacts
+                    </a>
+                </li>
+                <li class="sidenav__list-item">
+                    <a href="" title="">
+                        <img src="../img/Icons/Solid/clipboard.svg">Tâches
+                    </a>
+                </li>
+                <li class="sidenav__list-item">
+                    <a href="" title="">
+                        <img src="../img/Icons/Solid/calendar-alt.svg">Agenda
+                    </a>
+                </li>
+                <li class="sidenav__list-item">
+                    <a href="" title="">
+                        <img src="../img/Icons/Solid/user-circle.svg">Mon profil
+                    </a>
+                </li>
+            </ul>
+            <!-- DÉCONNEXION -->
+            <div class="sidenav__log-out">
+                <img src="../img/Icons/Solid/toggle-off.png">
+                <a href="#">Déconnexion</a>
+            </div>
+        </nav>
+        <!-- HEADER -->
+        <header class="header">
+            <!-- BLOCS -->
+            <ul>
+                <li class="tab-item is-active">Informations</li>
+                <li class="tab-item">Réseaux sociaux</li>
+            </ul>
+            <div class="header__search-ctn">
+                <div class="header__search-container">
+                    <input class="header__search-request" placeholder="Saisissez le nom d'un contact">
+                    <img src="../img/Icons/Solid/search.svg" class="header__search-loupe">
+                </div>
+                <div class="header__add-container">
+                    <img src="../img/Icons/Solid/plus.svg">
+                </div>
+                <div class="header_account-profile">
+                    <a href="" title="">
+                        <img src="../img/header-profile.png">
+                    </a>
+                </div>
+            </div>
+            <div class="add_card hidden">
+                <ul class="add_card-list">
+                    <li>
+                        <a href="#">
+                            <img src="../img/Icons/Regular/address-book.svg">
+                            Ajouter un contact
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../img/Icons/Solid/clipboard.svg">
+                            Ajouter une tâche
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../img/Icons/Solid/calendar-alt.svg">
+                            Ajouter un événement
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
         <section class="contact-single">
 
             <!-- SECTION INFORMATIONS -->
@@ -21,13 +102,8 @@
                 <!-- NOM DU CONTACT -->
                 <h1 class="contact-single__title">Karim Deschamps</h1>
             </div>
-            <!-- BLOCS -->
-            <ul>
-                <li class="tab-item">Informations</li>
-                <li class="tab-item">Réseaux sociaux</li>
-            </ul>
             <form>
-                    <div class="section section-informations">
+                <div class="section section-informations">
                     <div class="contact-single__boxes">
                         <!-- FORMULAIRE -->
                         <div class="left-box">
@@ -290,15 +366,17 @@
         <script>
             var linkToModal = document.querySelector('.delete-account');
             var modalCtn = document.querySelector('.modals-ctn');
-            var modalItem = document.querySelector('.modals-ctn__item--delete');
+            var modalDelItem = document.querySelector('.modals-ctn__item--delete');
+            var modalTagItem = document.querySelector('.modals-ctn__item--add-tag');
             var body = document.querySelector('body');
+            var addTag = document.querySelector('.add-tag');
 
             linkToModal.addEventListener('click', function (e) {
                 e.preventDefault();
                 e.stopPropagation();
 
                 modalCtn.classList.add('show');
-                modalItem.classList.add('show');
+                modalDelItem.classList.add('show');
             })
 
             modalItem.addEventListener('click', function (e) {
@@ -322,10 +400,10 @@
             for (let i = 0; i < tabItem.length; i++) {
                 tabItem[i].addEventListener('click', function () {
                     for (var j = 0; j < sections.length; j++) {
-                        //tabItem[j].style.display = 'none';
+                        tabItem[j].classList.remove('is-active');
                         sections[j].style.display = 'none';
                     }
-                    //tabItem[i].style.display = 'flex';
+                    tabItem[i].classList.add('is-active');
                     sections[i].style.display = 'flex'
                 });
             }
