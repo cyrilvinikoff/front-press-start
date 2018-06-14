@@ -134,30 +134,24 @@
                                 <!-- POSTE SITE(S) -->
                                 <div class="input-ctn">
                                     <label for="">SITES WEB</label>
-                                    <div class="input-wrapper">
-                                        <input class="input" type="text" placeholder="Saisissez le site...">
-                                        <a href="">
-                                            <img src="../img/open-link.svg" alt="ouvrir le lien">
-                                        </a>
-                                        <a href="">
-                                            <img src="../img/supprimer-lien.svg" alt="supprimer le lien">
-                                        </a>
-                                    </div>
-                                    <div>
-                                        <input class="input" type="text" placeholder="Saisissez le site...">
-                                        <a href="">
-                                            <img src="../img/open-link.svg" alt="ouvrir le lien">
-                                        </a>
-                                        <a href="">
-                                            <img src="../img/supprimer-lien.svg" alt="supprimer le lien">
-                                        </a>
+                                    <div class="inputs">
+
+                                        <div class="input-wrapper">
+                                            <input class="input" type="text" placeholder="Saisissez le site...">
+                                            <a href="">
+                                                <img src="../img/open-link.svg" alt="ouvrir le lien">
+                                            </a>
+                                            <a href="">
+                                                <img src="../img/supprimer-lien.svg" alt="supprimer le lien">
+                                            </a>
+                                        </div>
                                     </div>
                                     <img class="add-site" src="../img/ajouter-tag.svg" alt="ajouter un site">
                                 </div>
                             </div>
                             <div class="profile-actions">
                                 <a href="mailto:cyrilvinikoff@gmail.com">Envoyer un mail</a>
-                                <input type="button" class="delete-account" value="Supprimer ce compte">
+                                <input type="button" class="delete-account open-modal" value="Supprimer ce compte">
                             </div>
                         </div>
                     </form>
@@ -204,14 +198,25 @@
 
             <!-- MODALES CONTACT -->
             <div class="modals-ctn">
+                <!-- SUPPRESSION COMPTE -->
                 <form class="modals-ctn__item modals-ctn__item--delete">
                     <h4>Suppression de compte</h4>
                     <p>Voulez-vous vraiment supprimer votre compte ? Cette action entraînera la suppression définitive de vos informations.</p>
                     <div>
                         <input class="btn btn--validate" type="button" value="Confirmer">
-                        <input class="btn btn--warning" type="button" value="Annuler">
+                        <!-- <input class="btn btn--warning" type="button" value="Annuler"> -->
                     </div>
                 </form>
+
+                <!-- AJOUT TAG -->
+                <form class="modals-ctn__item modals-ctn__item--add-tag">
+                    <h4>Ajouter un tag</h4>
+                    <input type="text" placeholder="Saisissez le tag recherché…">
+                    <div>
+                        <input class="btn btn--validate" type="button" value="Ajouter le tag">
+                    </div>
+                </form>
+
             </div>
         </section>
 
@@ -274,6 +279,31 @@
                             }
                         })
                 })
+        </script>
+
+        <script>
+            var linkToModal = document.querySelector('.delete-account');
+            var modalCtn = document.querySelector('.modals-ctn');
+            var modalItem = document.querySelector('.modals-ctn__item--delete');
+            var body = document.querySelector('body');
+
+            linkToModal.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+
+                modalCtn.classList.add('show');
+                modalItem.classList.add('show');
+            })
+
+            modalItem.addEventListener('click', function(e) {
+                e.stopPropagation();
+            })
+
+            document.querySelector('body').addEventListener('click', function(e) {
+                e.preventDefault();
+
+                modalCtn.classList.remove('show');
+            })
         </script>
     </body>
 </html>
